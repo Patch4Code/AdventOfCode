@@ -1,4 +1,4 @@
-# Advent of Code
+# Advent of Code 2023
 # Day 1: Trebuchet?!
 
 from time import perf_counter as pfc
