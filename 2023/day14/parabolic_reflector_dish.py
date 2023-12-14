@@ -47,10 +47,6 @@ def solve_part_2(puzzle):
             roll_east = let_rocks_roll([''.join(row) for row in zip(*roll_south[::-1])])
             new_state  = [''.join(row) for row in zip(*roll_east[::-1])]
 
-            zwischen_result = 0
-            for counter, line in enumerate(reversed(new_state), start=1):
-                zwischen_result += (counter*line.count('O'))
-        
             cache[tuple_starting_point] = new_state
             starting_point = new_state
     
