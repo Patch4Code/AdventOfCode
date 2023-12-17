@@ -11,15 +11,15 @@ def read_puzzle(filename):
 
 def solve_part_1(puzzle):   
     
-    return get_min_healoss(puzzle, (0,0), (len(puzzle[0])-1, len(puzzle)-1))
+    return get_min_heatloss(puzzle, (0,0), (len(puzzle[0])-1, len(puzzle)-1))
 
 
 def solve_part_2(puzzle):
     
-    return get_min_healoss(puzzle, (0,0), (len(puzzle)-1, len(puzzle[0])-1), 4, 10)
+    return get_min_heatloss(puzzle, (0,0), (len(puzzle)-1, len(puzzle[0])-1), 4, 10)
 
 
-def get_min_healoss(matrix, start_position, target_position, min_steps_before_turn = 0, max_steps = 3):
+def get_min_heatloss(matrix, start_position, target_position, min_steps_before_turn = 0, max_steps = 3):
     rows = len(matrix)
     cols = len(matrix[0])
 
